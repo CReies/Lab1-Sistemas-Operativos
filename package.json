@@ -1,7 +1,7 @@
 {
-	"name": "node-template",
+	"name": "lab1-sistemas-operativos",
 	"version": "1.0.0",
-	"description": "My personal configuration to init a Node project",
+	"description": "Project generated with https://github.com/CReies/Node-Template.git",
 	"main": "./src/index.ts",
 	"scripts": {
 		"start:dev": "nodemon",
@@ -16,7 +16,7 @@
 	"license": "MIT",
 	"repository": {
 		"type": "git",
-		"url": "https://github.com/CReies/Node-Template.git"
+		"url": "https://github.com/CReies/Lab1-Sistemas-Operativos.git"
 	},
 	"dependencies": {
 		"debug": "4.3.4",
@@ -25,7 +25,6 @@
 	"devDependencies": {
 		"@types/debug": "4.1.7",
 		"@types/dotenv-safe": "8.1.2",
-		"@types/jest": "29.2.1",
 		"@types/node": "18.11.9",
 		"@typescript-eslint/eslint-plugin": "5.42.0",
 		"@typescript-eslint/parser": "5.42.0",
@@ -37,10 +36,8 @@
 		"eslint-plugin-n": "15.4.0",
 		"eslint-plugin-prettier": "4.2.1",
 		"eslint-plugin-promise": "6.1.1",
-		"jest": "29.2.2",
 		"nodemon": "2.0.20",
 		"prettier": "2.7.1",
-		"ts-jest": "29.0.3",
 		"ts-node": "10.9.1",
 		"tsconfig-paths": "4.1.0",
 		"typescript": "4.8.4"
