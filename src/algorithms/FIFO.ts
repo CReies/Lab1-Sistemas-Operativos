@@ -1,4 +1,4 @@
-import { sleep, writeJSON } from '../functions';
+import { sleep } from '../functions';
 import changeProcessState from '../functions/changeProcessState';
 import { process } from '../types';
 
@@ -6,8 +6,6 @@ const FIFO = (processes: process[], quantumTime: number) => {
 	processes.forEach(process => {
 		changeProcessState(process, 'Ready');
 	});
-
-	writeJSON('../processes.json', processes);
 
 	async function runProcesses(processes: process[]) {
 		for (let i = 0; i < processes.length; i++) {
@@ -28,8 +26,6 @@ const FIFO = (processes: process[], quantumTime: number) => {
 	}
 
 	runProcesses(processes);
-
-	writeJSON('../processes.json', processes);
 };
 
 export default FIFO;
