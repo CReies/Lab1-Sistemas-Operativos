@@ -14,7 +14,6 @@ function ask() {
 			case '1':
 				rl.close();
 				FIFO(processes, quantumTime);
-				rl.close();
 				break;
 
 			default:
