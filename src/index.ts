@@ -6,12 +6,14 @@ import { process } from './types';
 const rl = readline.createInterface({ input: process.stdin, output: process.stdout });
 const processes = readJSON('./src/processes.json') as process[];
 
+const quantumTime = 1000;
+
 function ask() {
 	rl.question('Que algoritmo de planificación le gustaría utilizar?\n1- FIFO\n2- ', input => {
 		switch (input) {
 			case '1':
 				rl.close();
-				FIFO(processes, 1000);
+				FIFO(processes, quantumTime);
 				rl.close();
 				break;
 
