@@ -3,7 +3,7 @@
 		"PID": 1,
 		"name": "Process #1",
 		"state": "New",
-		"Quantum": 3,
+		"quantum": 3,
 		"crash": false
 	}
 ]
