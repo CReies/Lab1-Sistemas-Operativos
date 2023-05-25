@@ -9,7 +9,8 @@ const processes = readJSON('./src/processes.json') as process[];
 const quantumTime = 1000;
 
 function ask() {
-	rl.question('Que algoritmo de planificación le gustaría utilizar?\n1- FIFO\n2- SJF\n3- RR\n#', input => {
+	rl.question('Que algoritmo de planificación le gustaría utilizar?\n1- FIFO\n2- SJF\n3- RR\n#', 
+	input => {
 		switch (input) {
 			case '1':
 				rl.close();

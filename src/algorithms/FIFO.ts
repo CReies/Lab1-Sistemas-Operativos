@@ -1,5 +1,4 @@
-import { sleep } from '../functions';
-import changeProcessState from '../functions/changeProcessState';
+import { sleep, changeProcessState } from '../functions';
 import { process } from '../types';
 
 const FIFO = (processes: process[], quantumTime: number) => {
