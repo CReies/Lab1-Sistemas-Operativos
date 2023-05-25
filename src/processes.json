@@ -5,5 +5,19 @@
 		"state": "New",
 		"quantum": 3,
 		"crash": false
+	},
+	{
+		"PID": 2,
+		"name": "Process #2",
+		"state": "New",
+		"quantum": 1,
+		"crash": false
+	},
+	{
+		"PID": 3,
+		"name": "Process #3",
+		"state": "New",
+		"quantum": 1,
+		"crash": true
 	}
 ]
