@@ -9,16 +9,25 @@ const FIFO = (processes: process[], quantumTime: number) => {
 
 	writeJSON('../processes.json', processes);
 
-	processes.forEach(process => {
-		changeProcessState(process, 'Running');
-		setTimeout(() => {
+	async function runProcesses(processes: process[]) {
+		for (let i = 0; i < processes.length; i++) {
+			const process = processes[i];
+			changeProcessState(process, 'Running');
+			console.log('...');
+
+			await sleep(quantumTime * process.quantum);
+
 			if (!process.crash) {
 				changeProcessState(process, 'Finished');
+				console.log();
 			} else {
 				changeProcessState(process, 'Aborted');
+				console.log();
 			}
-		}, quantumTime * process.quantum);
-	});
+		}
+	}
+
+	runProcesses(processes);
 
 	writeJSON('../processes.json', processes);
 };
