@@ -1,6 +1,6 @@
-import { writeJSON } from '@src/functions';
-import changeProcessState from '@src/functions/changeProcessState';
-import { process } from '@src/types';
+import { sleep, writeJSON } from '../functions';
+import changeProcessState from '../functions/changeProcessState';
+import { process } from '../types';
 
 const FIFO = (processes: process[], quantumTime: number) => {
 	processes.forEach(process => {

@@ -1,4 +1,4 @@
-import { process } from '@src/types';
+import { process } from '../types';
 
 const changeProcessState = (process: process, newState: process['state']) => {
 	console.log(`${process.name} #${process.PID} - ${process.state} => ${newState}`);

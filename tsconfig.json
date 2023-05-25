@@ -8,9 +8,6 @@
 		"rootDir": "./src",
 		"moduleResolution": "node",
 		"baseUrl": "./src",
-		"paths": {
-			"@src/*": ["./*"]
-		},
 		"allowJs": true,
 		"outDir": "dist",
 		"removeComments": true,
