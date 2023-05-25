@@ -2,6 +2,8 @@
 	{
 		"PID": 1,
 		"name": "Process #1",
-		"state": ""
+		"state": "New",
+		"Quantum": 3,
+		"crash": false
 	}
 ]
